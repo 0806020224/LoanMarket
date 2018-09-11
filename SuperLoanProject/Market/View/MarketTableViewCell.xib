@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.hsbc.tableview.reuse.cell.MarketTableViewCell.edit" rowHeight="199" id="KGk-i7-Jjw" customClass="MarketTableViewCell" customModule="SuperLoanProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="199"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="198.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYX-lJ-2iY">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="198.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wmr-zp-rMm">
+                                <rect key="frame" x="10" y="15" width="20" height="20"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.86274509799999999" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="58X-Ri-4nL"/>
+                                    <constraint firstAttribute="height" constant="20" id="xcC-Sr-CFU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="白熊钱包 · 12079人成功下款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfS-KS-1v8">
+                                <rect key="frame" x="38" y="18" width="376" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500 ~ 4500元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkl-Bf-8pC">
+                                <rect key="frame" x="10" y="43" width="115" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="芝麻分550，提交身份证认证后，5分钟到账" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L17-v3-ZpX">
+                                <rect key="frame" x="10" y="70.5" width="334" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uij-Be-iwh" customClass="GradientButton" customModule="SuperLoanProject" customModuleProvider="target">
+                                <rect key="frame" x="364" y="87" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="I1d-YI-jeH"/>
+                                    <constraint firstAttribute="width" constant="60" id="hj7-19-gPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="申请">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyButtonOnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kVE-Xk-os4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MB-AL-LPa">
+                                <rect key="frame" x="10" y="198" width="414" height="0.5"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZGc-Kd-tYG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LfS-KS-1v8" firstAttribute="leading" secondItem="Wmr-zp-rMm" secondAttribute="trailing" constant="8" id="1hc-Eu-vIk"/>
+                            <constraint firstItem="LfS-KS-1v8" firstAttribute="centerY" secondItem="Wmr-zp-rMm" secondAttribute="centerY" id="7pb-Cp-Uis"/>
+                            <constraint firstAttribute="trailing" secondItem="1MB-AL-LPa" secondAttribute="trailing" constant="10" id="8u2-FC-yiq"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L17-v3-ZpX" secondAttribute="bottom" constant="20" id="GCk-0F-k14"/>
+                            <constraint firstItem="Tkl-Bf-8pC" firstAttribute="top" secondItem="Wmr-zp-rMm" secondAttribute="bottom" constant="8" id="KkK-KQ-NGB"/>
+                            <constraint firstItem="Wmr-zp-rMm" firstAttribute="leading" secondItem="LYX-lJ-2iY" secondAttribute="leading" constant="10" id="Qsa-tl-391"/>
+                            <constraint firstAttribute="bottom" secondItem="1MB-AL-LPa" secondAttribute="bottom" id="S3W-Kc-R1Y"/>
+                            <constraint firstItem="L17-v3-ZpX" firstAttribute="top" secondItem="Tkl-Bf-8pC" secondAttribute="bottom" constant="8" id="Ukn-dw-IFQ"/>
+                            <constraint firstItem="1MB-AL-LPa" firstAttribute="leading" secondItem="LYX-lJ-2iY" secondAttribute="leading" constant="10" id="Wq9-xj-7KB"/>
+                            <constraint firstItem="L17-v3-ZpX" firstAttribute="leading" secondItem="Tkl-Bf-8pC" secondAttribute="leading" id="dsf-Ts-fw8"/>
+                            <constraint firstItem="uij-Be-iwh" firstAttribute="leading" secondItem="L17-v3-ZpX" secondAttribute="trailing" constant="20" id="duW-qB-Uk3"/>
+                            <constraint firstItem="Tkl-Bf-8pC" firstAttribute="leading" secondItem="Wmr-zp-rMm" secondAttribute="leading" id="fCs-UM-whJ"/>
+                            <constraint firstItem="uij-Be-iwh" firstAttribute="centerY" secondItem="LYX-lJ-2iY" secondAttribute="centerY" id="uah-P6-gTb"/>
+                            <constraint firstAttribute="trailing" secondItem="uij-Be-iwh" secondAttribute="trailing" constant="10" id="vRN-jd-dqH"/>
+                            <constraint firstItem="Wmr-zp-rMm" firstAttribute="top" secondItem="LYX-lJ-2iY" secondAttribute="top" constant="15" id="yeZ-sC-bpS"/>
+                            <constraint firstAttribute="trailing" secondItem="LfS-KS-1v8" secondAttribute="trailing" constant="20" id="zRV-P0-cBo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="LYX-lJ-2iY" secondAttribute="bottom" id="BL6-Ql-48d"/>
+                    <constraint firstAttribute="trailing" secondItem="LYX-lJ-2iY" secondAttribute="trailing" id="f1s-Qv-i6X"/>
+                    <constraint firstItem="LYX-lJ-2iY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ixa-yZ-KQn"/>
+                    <constraint firstItem="LYX-lJ-2iY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v78-OS-fLq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="allView" destination="LYX-lJ-2iY" id="P16-EG-33V"/>
+                <outlet property="applyButton" destination="uij-Be-iwh" id="Ott-kl-ZG3"/>
+                <outlet property="decLabel" destination="L17-v3-ZpX" id="fud-6b-TFd"/>
+                <outlet property="iconImageView" destination="Wmr-zp-rMm" id="TZY-5D-fEi"/>
+                <outlet property="nameLabel" destination="LfS-KS-1v8" id="Lsl-U8-VQm"/>
+                <outlet property="priceLabel" destination="Tkl-Bf-8pC" id="2VY-pb-iRE"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="30.5"/>
+        </tableViewCell>
+    </objects>
+</document>
