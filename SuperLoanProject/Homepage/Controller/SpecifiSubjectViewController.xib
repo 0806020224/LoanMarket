@@ -13,7 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpecifiSubjectViewController" customModule="SuperLoanProject" customModuleProvider="target">
             <connections>
                 <outlet property="allView" destination="4rR-E1-Ngb" id="f0y-MF-CAc"/>
+                <outlet property="backImageViewCenterYConstraint" destination="qMd-iC-ayv" id="az3-5p-wxM"/>
                 <outlet property="blueView" destination="2sf-3Q-ig4" id="Rpc-Rm-GvS"/>
+                <outlet property="navigationBarHeightConstraint" destination="BbQ-Ga-Pus" id="kP4-m1-o1c"/>
                 <outlet property="tableView" destination="jeB-je-TOJ" id="BiL-a4-oHK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

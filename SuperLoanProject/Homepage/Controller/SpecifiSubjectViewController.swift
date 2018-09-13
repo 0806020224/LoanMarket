@@ -17,9 +17,11 @@ class SpecifiSubjectViewController: UIViewController {
     
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var navigationBarHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var blueView: UIView!
     @IBOutlet weak var allView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backImageViewCenterYConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +45,9 @@ class SpecifiSubjectViewController: UIViewController {
         
         if !UIScreen.isX() {
            self.blueView.isHidden = true
+        } else {
+            self.navigationBarHeightConstraint.constant = 88
+            self.backImageViewCenterYConstraint.constant = 20
         }
     }
     
